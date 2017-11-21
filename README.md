@@ -1,5 +1,1 @@
 # geniuses-team
-
-
-sdagadsngl
-
