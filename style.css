@@ -1,0 +1,28 @@
+html {
+    background-image:url('img/game.jpg');
+    -webkit-background-size:cover; /* CSS3 */
+    -moz-background-size:cover; /* CSS3 */
+    -o-background-size:cover; /* CSS3 */
+    background-size:cover; /* CSS3 */
+    height:100vh;
+}
+
+.header .intro {padding-top:50px;text-align:center;color:#FFF; text-align: center;}
+
+.header .intro img {
+    margin:0 auto;
+    width:600px;
+    padding:5px 0;
+}
+
+.header .intro button {
+    background:none;
+    margin-top:20px;
+    font-size:20px;
+    border:2px solid #FFF;
+    font-weight:bold;
+    padding:10px 30px;
+    display: flex;
+    margin-left: 43%;
+    cursor: pointer;
+}
