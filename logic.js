@@ -44,39 +44,49 @@
     var character = characters[i],
         character_2 = characters[v],
         character_3 = characters[c],
-        src = character.imageLink ? "https://api.got.show" + character.imageLink : "",
-        src1 = character_2.imageLink ? "https://api.got.show" + character_2.imageLink : "",
-        src2 = character_3.imageLink ? "https://api.got.show" + character_3.imageLink : "";
-    if (src) {
-      photo.style.display = "";
-      photo.setAttribute("src", src);
-    } else {
-      photo.style.display = "none";
-    }
-    name.innerHTML = character.name;
+        src = character.imageLink   ? "https://api.got.show" + character.imageLink : "./img/no.png",
+        src1 = character_2.imageLink ? "https://api.got.show" + character_2.imageLink : "./img/no.png",
+        src2 = character_3.imageLink ? "https://api.got.show" + character_3.imageLink : "./img/no.png";
 
-    gender.innerHTML = character.male ? "male" : "female";
-    title.innerHTML = character.titles.length ? character.titles[0] : "";
-    if (src1) {
-      photo1.style.display = "";
-      photo1.setAttribute("src", src1);
-    } else {
-      photo1.style.display = "none";
-    }
-    name1.innerHTML = character_2.name;
+        photo.setAttribute("src", src);
+        photo1.setAttribute("src", src1);
+        photo2.setAttribute("src", src2);
+        // photo.src = src;
+        // photo1.src1 = src1;
+        // photo2.src2 = src2;
+        console.log(src);
+        console.log(src1);
+    // if (src) {
+    //   photo.style.display = "";
+    //   photo.setAttribute("src", src);
+    // } else {
+    //   photo.style.display = "none";
+    // }
 
-    gender1.innerHTML = character_2.male ? "male" : "female";
-    title1.innerHTML = character_2.titles.length ? character_2.titles[0] : "";
-    if (src2) {
-      photo2.style.display = "";
-      photo2.setAttribute("src", src2);
-    } else {
-      photo2.style.display = "none";
-    }
-    name2.innerHTML = character_3.name;
+    // if (src1) {
+    //   photo1.style.display = "";
+    //   photo1.setAttribute("src", src1);
+    // } else {
+    //   photo1.setAttribute("src", );
+    // }
+    //
+    // if (src2) {
+    //   photo2.style.display = "";
+    //   photo2.setAttribute("src", src2);
+    // } else {
+    //   photo2.style.display = "none";
+    // }
+    name.innerHTML = "Name :: " + character.name;
+    gender.innerHTML = character.male ? "Gender Is: male" : "Gender Is: female";
+    title.innerHTML = character.titles.length ? "Title :: " + character.titles[0] : "Dont have title";
 
-    gender2.innerHTML = character_3.male ? "male" : "female";
-    title2.innerHTML = character_3.titles.length ? character_3.titles[0] : "";
+    name1.innerHTML = "Name :: " + character_2.name;
+    gender1.innerHTML = character_2.male ? "Gender Is: male" : "Gender Is: female";
+    title1.innerHTML = character_2.titles.length ? "Title :: " + character_2.titles[0] : "Dont have title";
+
+    name2.innerHTML = "Name :: " + character_3.name;
+    gender2.innerHTML = character_3.male ? "Gender Is: male" : "Gender Is: female";
+    title2.innerHTML = character_3.titles.length ? "Title :: " + character_3.titles[0] : "Dont have title";
   }
 
   fetch("https://api.got.show/api/characters/", function (response) {
