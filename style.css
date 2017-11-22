@@ -14,7 +14,13 @@ html {
     width:600px;
     padding:5px 0;
 }
-
+#display{
+  overflow: hidden;
+}
+#display #character{
+  float: left;
+  width: 33%;
+}
 .header .intro button {
     background:none;
     margin-top:20px;
