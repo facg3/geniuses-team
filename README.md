@@ -29,7 +29,7 @@ For example, Amazon or eBay APIs allow developers to use the existing retail inf
 
 We are developing a web app for a Game of Thrones series with the following requirements:
 We want to be able to search for a character in the series and receive name of character,  gender, tittel  end photo.
-We want to see behind name of character from the another API.
+We want to see vvideo for character from the another API.
 
 
 
@@ -45,7 +45,7 @@ First together we worked on the architecture of the code , then we chose the API
 
 API of Game of Thrones : https://api.got.show/api/characters/
 
-API of Behind the name : https://www.behindthename.com/api/lookup.php?name=????&key=no007783
+API of youtube 
 
 
 
