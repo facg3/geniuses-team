@@ -24,7 +24,6 @@ There are many different types of APIs for operating systems, applications or we
  and paste text from one application to another, it is the API that allows that to work.
 Most operating environments, such as MS-Windows, provide APIs, allowing programmers to write applications consistent with the operating environment. Today, APIs are also specified by websites.
 
-For example, Amazon or eBay APIs allow developers to use the existing retail infrastructure to create specialized web stores. Third-party software developers also use Web APIs to create software solutions for end-users.
 
 # User Stories:
 
